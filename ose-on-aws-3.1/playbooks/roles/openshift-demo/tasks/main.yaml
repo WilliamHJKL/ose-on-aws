@@ -1,0 +1,6 @@
+---
+- name: Create the demo project
+  command: oc new-project demo
+
+- name: Create MLB project
+  shell: oc create -f https://raw.githubusercontent.com/gshipley/openshift3mlbparks/master/mlbparks-template-eap.json -n openshift
